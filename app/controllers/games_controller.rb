@@ -1,6 +1,10 @@
 class GamesController < ApplicationController
   before_action :find_games, only: [:show, :update, :destroy]
 
+  # entry point to five_card_draw for React frontend
+  def home 
+  end
+
   def index
   end
 

@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  root "games#home", as: "games" #entry route
+
   resources :players
   resources :games 
   resources :banks, only: :show 
